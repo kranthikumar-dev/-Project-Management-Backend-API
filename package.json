@@ -1,21 +1,23 @@
 {
-  "name": "projectmanagement",
+  "name": "project-management-backend",
   "version": "1.0.0",
-  "description": "a projectmanagement application for beginners",
-  "main": "index.js",
+  "description": "Scalable Node.js backend API for project and task management with JWT authentication and modular architecture",
+  "main": "src/index.js",
   "type": "module",
   "scripts": {
     "dev": "nodemon src/index.js",
     "start": "node src/index.js"
   },
   "keywords": [
-    "udemy",
-    "course",
+    "nodejs",
+    "express",
+    "mongodb",
     "backend",
-    "API",
-    "creation"
+    "rest-api",
+    "project-management",
+    "jwt-authentication"
   ],
-  "author": "kranthi kumar",
+  "author": "Kranthi Kumar",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^3.1.11",
@@ -23,12 +25,16 @@
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
+    "compression": "^1.8.1",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
     "express-validator": "^7.3.1",
+    "helmet": "^8.1.0",
     "jsonwebtoken": "^9.0.3",
-    "mongoose": "^9.1.1"
+    "mongoose": "^9.1.1",
+    "morgan": "^1.10.1",
+    "multer": "^2.1.1"
   }
 }
