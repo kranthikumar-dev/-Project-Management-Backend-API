@@ -1,6 +1,6 @@
 # 🚀 Project Management Backend API
 
-A scalable and modular backend system for managing projects, tasks, and team collaboration. Built using Node.js, Express, and MongoDB with production-ready practices.
+A scalable and modular backend system for managing projects, tasks, and team collaboration. Built using **Node.js (ES Modules)**, Express, and MongoDB with production-ready practices.
 
 ---
 
@@ -20,7 +20,7 @@ The architecture is designed for **scalability, maintainability, and real-world 
 
 ## 🏗️ Tech Stack
 
-* **Backend:** Node.js, Express.js
+* **Backend:** Node.js (ES Modules), Express.js
 * **Database:** MongoDB (Mongoose)
 * **Authentication:** JWT (Access & Refresh Tokens)
 * **Security:** Helmet, CORS
@@ -28,6 +28,25 @@ The architecture is designed for **scalability, maintainability, and real-world 
 * **Performance:** Compression
 * **Validation:** express-validator
 * **File Uploads:** Multer
+
+---
+
+## 📦 Module System
+
+This project uses **ES Modules (ESM)** instead of CommonJS.
+
+Example:
+
+```js
+import express from "express";
+import mongoose from "mongoose";
+```
+
+👉 Ensure your `package.json` contains:
+
+```json
+"type": "module"
+```
 
 ---
 
@@ -69,25 +88,25 @@ REFRESH_TOKEN_EXPIRY=7d
 
 ## ▶️ Getting Started
 
-### Install dependencies
+### 1. Install dependencies
 
 ```bash
 npm install
 ```
 
-### Run development server
+### 2. Run development server
 
 ```bash
 npm run dev
 ```
 
-### Run production server
+### 3. Run production server
 
 ```bash
 npm start
 ```
 
-Server runs on:
+Server runs at:
 
 ```
 http://localhost:8000
